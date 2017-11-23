@@ -16,5 +16,6 @@ Then just do the following:
 
 Contributor
 ------------
-Sihan  ([@foyez-sihan](https://github.com/foyez-sihan))
-Arnab
+Sihan ([@foyez-sihan](https://github.com/foyez-sihan))
+Arnab ([@Arnab](http://ruddra.com))
+
