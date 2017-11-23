@@ -73,7 +73,6 @@ export default class AirBnBApp extends Component {
         }
         return (
             <div className="main ui text container">
-                <div>
                 <h1 className="ui dividing centered header">AirBnBDemo</h1>
                 <div id="content">
                     <div>
@@ -93,7 +92,6 @@ export default class AirBnBApp extends Component {
                     </div>
                 </div>
                 </div>
-            </div>
         )
     }
 }

@@ -168,7 +168,56 @@ const seedSections = [
         id: 3,
         typeId: 2,
         title: "Art and History experiences",
-        listings: []        
+        listings: [
+            {
+                id: 22,
+                category: "PHOTO CLASS",
+                title: "Look like a star in your photos in Barceloneta neighbourhood",
+                isFavorite: false,
+                price: generatePrice(),
+                image:"https://a0.muscache.com/im/pictures/c1419863-1d61-4670-89e8-1817c092c4de.jpg?aki_policy=large"
+            },
+            {
+                id: 23,
+                category:"CULTURE WALK",
+                title: "Hidden Sagrada Familia's secrets & typical Catalan breakfast",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/im/pictures/e961b091-0fb9-4c17-b4d7-6a86c375c53c.jpg?aki_policy=large"
+            },
+            {
+                id: 24,
+                category: "SHOPPING",
+                title: "Meet local designers & the trendiest places in Barcelona",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/im/pictures/1090104d-caa1-4378-aa41-95c1a57c8e20.jpg?aki_policy=large"
+            },
+            {
+                id: 25,
+                categoryName :"PHOTO CLASS",
+                title: "Learn the art of film photography",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/im/pictures/61b06f65-c8e0-49bb-a5e1-871efa4d6e91.jpg?aki_policy=large"
+            },
+            {
+                id: 26,
+                categoryName: "MURAL WORKSHOP",
+                title: "Join a multidisciplinary artist in creating a mural on the neighborhood streets",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/im/pictures/81059420-2193-4532-b358-665a2647fcda.jpg?aki_policy=large"
+            },
+            {
+                id:27,
+                categoryName: "BIKE RIDE",
+                title: "Ride an e-bike through Gaudi’s history",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/im/pictures/e0d2bd9a-aad5-42b4-a026-d1e60e5ee6fa.jpg?aki_policy=large"
+            }
+        ]
     },
     {
         id: 4,
@@ -182,7 +231,39 @@ const seedSections = [
                 isFavorite: false,
                 price: generatePrice(),
                 image: "https://a0.muscache.com/im/pictures/de11348b-4689-4984-bd10-7cf1ab1ff834.jpg?aki_policy=large"
-            }
+            },
+            {
+                id: 18,
+                categoryName: "PIZZERIA",
+                title: "Pasquale Jones",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/ac/pictures/0fdd0c36-c6c7-4ca3-beb1-7dfdbf7471bd.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70"
+            },
+            {
+                id: 19,
+                categoryName: "FINE SHUSHI BAR",
+                title: "sushi AMANE",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/ac/pictures/456e1325-74b4-4ec6-a1e5-ecf48c2ef507.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70"
+            },
+            {
+                id: 20,
+                categoryName: "NEW AMERICAN",
+                title: "Banter",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/ac/pictures/c84f7961-93c3-4966-a8bf-b64bec847afc.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70"
+            },
+            {
+                id: 21,
+                categoryName: "PIZZERIA",
+                title: "Osteria Cotta",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/ac/pictures/285e91af-af15-48db-98f8-c893c4de3620.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70"
+            },
         ]
     }
 ]
