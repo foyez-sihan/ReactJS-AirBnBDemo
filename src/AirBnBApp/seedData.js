@@ -173,8 +173,17 @@ const seedSections = [
     {
         id: 4,
         typeId: 3,
-        title: "Popular reservations",
-        listings: []        
+        title: "Popular restaurants",
+        listings: [
+            {
+                id: 17,
+                categoryName: "FOOD & DRINK",
+                title: "Indulge in Izakaya food & drink culture in Shinjuku",
+                isFavorite: false,
+                price: generatePrice(),
+                image: "https://a0.muscache.com/im/pictures/de11348b-4689-4984-bd10-7cf1ab1ff834.jpg?aki_policy=large"
+            }
+        ]
     }
 ]
 const favoriteSection =
