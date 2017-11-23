@@ -33,10 +33,9 @@ i.icon {
 }
 .list_item {
     width: 200px;
-    display: flex;
-    flex-direction: column;
     margin-top: 10px;
     border: 1px solid blue;
+    position: relative;
 }
 .list_item img{
     max-width:200px;
@@ -45,6 +44,35 @@ i.icon {
     height: auto;
     border: 1px dashed red;
     border-radius: 2px;
+}
+.list_item .like_button{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+}
+.list_item .like_button.focus{
+    outline: none;
+}
+.list_item .like_button svg {
+    height: 32px;
+    width: 32px;
+    display: block;
+    viewBox: "0 0 32 32";
+    fill: "#484848";
+    fill-opacity:0.5;
+    stroke: white;
+    stroke-width : 1.5;
+    aria-label:"Save this listing to review later.";
+    role:"img";
+    stroke-linecap:"round" ;
+    stroke-linejoin:"round";
+}
+.list_item .like_button svg:hover {
+    fill: red;
 }
 .category_name {
     font-size: small;
