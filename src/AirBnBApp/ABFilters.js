@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {experienceType} from './seedData'
+import {filterTypes} from './seedData'
 
 
 export default class ABFilters extends Component{
@@ -7,7 +7,7 @@ export default class ABFilters extends Component{
         return (
             <div className='filter_container'>
                 {
-                    experienceType.map((type) =>
+                    filterTypes.map((type) =>
                     <div className='filter_item' key={type.id}> 
                         <button>{type.title}</button>
                     </div>                    

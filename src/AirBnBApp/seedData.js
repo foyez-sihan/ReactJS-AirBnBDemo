@@ -1,22 +1,26 @@
 const generatePrice = () => Math.floor((Math.random() * 50) + 15)
-const experienceType = [
+let filterTypes = [
     {
         id: 1,
         title: "Home",
-        image: "https://a0.muscache.com/ac/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70"
+        image: "https://a0.muscache.com/ac/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70",
+        isSelected: false
+
     },
     {
         id: 2,
         title: "Experiences",
-        image: "https://a0.muscache.com/ac/pictures/d3811ff7-cc34-471b-8aee-b0d613db0052.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70"
+        image: "https://a0.muscache.com/ac/pictures/d3811ff7-cc34-471b-8aee-b0d613db0052.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70",
+        isSelected: false
     },
     {
         id: 3,
         title: "Restaurants",
-        image: "https://a0.muscache.com/ac/pictures/da2d8e97-90b7-409f-94ac-5ab0327c289b.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70"
+        image: "https://a0.muscache.com/ac/pictures/da2d8e97-90b7-409f-94ac-5ab0327c289b.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70",
+        isSelected: false
     }
 ]
-const sections = [
+const seedSections = [
     {
         id: 1,
         typeId: 1,
@@ -65,7 +69,7 @@ const sections = [
             {
                 id: 6,
                 categoryName: "ENTIRE APT - 3 BED",
-                title: "Quiet Central Georgian Property",
+                title: "Quiet Central Georgian Property.",
                 isFavorite: false,
                 image: "https://a0.muscache.com/im/pictures/13973712/9b644b54_original.jpg?aki_policy=large",
                 price: generatePrice()
@@ -173,4 +177,4 @@ const sections = [
         listings: []        
     }
 ]
-export  {sections, experienceType}
+export  {seedSections, filterTypes}
