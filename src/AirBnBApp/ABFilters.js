@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 import {experienceType} from './seedData'
-// import './style.css'
-
 
 
 export default class ABFilters extends Component{

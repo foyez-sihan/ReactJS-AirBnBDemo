@@ -25,7 +25,7 @@ const sections = [
             {
                 id: 1,
                 categoryName: "ENTIRE HOME/APT - 2 BED",
-                title: "Sunny flat in the centre of Edinburgh",
+                title: "Sunny flat in the centre of Edinburgh Sunny flat in the centre of Edinburgh Sunny flat in the centre of Edinburgh",
                 isFavorite: false,
                 price: generatePrice(),
                 image: "https://a0.muscache.com/im/pictures/12426057/2292b61c_original.jpg?aki_policy=large",

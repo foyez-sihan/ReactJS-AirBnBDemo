@@ -30,37 +30,33 @@ i.icon {
 } 
 .list_item {
     width: 200px;
-    height: 250px;
- 
-    /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 1px solid blue;
 }
 .list_item img{
     max-width:200px;
     max-height:200px;
     width: auto;
     height: auto;
-    border: 1px solid black;
+    border: 1px dashed red;
     border-radius: 2px;
-    /*background-color: black; */
 }
 .category_name {
     font-size: small;
 }
 .list_item item_title {
     font-style: oblique;
-                /*<img src={image} alt={title}/>
-                <div className='category_name'>{categoryName}</div>
-                <div className='item_title'>{title}</div>
-                <div className='price'>Price: {price}$</div>*/
+    max-height: 20px;
 }
 .listing_container{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;  
-
+    flex-wrap: wrap;
 }
 
 .section_container h3{
-    margin-top: 40px;
+    margin-top: 20px;
 }

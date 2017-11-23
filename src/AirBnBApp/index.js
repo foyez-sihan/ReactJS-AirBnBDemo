@@ -16,12 +16,13 @@ export default class AirBnBApp extends Component{
                         <h3>Filters</h3>
                         <ABFilters/>
                     </div>
-                    
-                    {sections.map
+                    {
+                        sections.map
                         (
                             (section) => <ABSection key={section.id} section={section}/> 
                         )
-                    }                    
+
+                    }
                 </div>
                 </div>
             </div>

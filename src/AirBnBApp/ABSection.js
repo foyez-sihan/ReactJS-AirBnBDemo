@@ -1,8 +1,5 @@
 import React, {Component} from 'react'
-import {sections, experienceType} from './seedData'
 import ListItem from './ListItem'
-// import './style.css'
-
 
 
 export default class ABSection extends Component{
