@@ -1,7 +1,7 @@
-Component Building
-==================
+React JS Assignment Project
+===========================
 
-Sample project to explore component development in react
+A demo project to explore component development in react js
 
 How To Run
 ----------
@@ -16,7 +16,5 @@ Then just do the following:
 
 Contributor
 ------------
-
-Rashidul Islam Rana ([@rashidul0405](https://github.com/rashidul0405))
-
-Muhammad Kamarul Kawnayeen ([@kawnayeen](https://github.com/kawnayeen))
+Sihan  ([@foyez-sihan](https://github.com/foyez-sihan))
+Arnab
