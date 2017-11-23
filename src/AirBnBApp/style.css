@@ -26,8 +26,11 @@ i.icon {
 .filter_item button{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 40px; 
-    margin: 10px 10px 10px 10px; 
-} 
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+}
 .list_item {
     width: 200px;
     display: flex;
