@@ -267,11 +267,4 @@ const seedSections = [
         ]
     }
 ]
-const favoriteSection =
-{
-    id: generatePrice(),
-    typeId: 3,
-    title: "Your favorites",
-    listings: []
-}
-export  {seedSections, filterTypes,favoriteSection}
+export  {seedSections, filterTypes}
