@@ -16,10 +16,13 @@ export default class ABFilters extends Component{
                         if (type.isSelected) {
                             className = "filter_item_selected"
                         }
-                        console.log(className);
-                        return <div className={className} key={type.id} onClick={ this.buttonClicked(type) }>
-                            {type.title}
-                        </div>
+                        return (<div className={className} key={type.id} onClick={ this.buttonClicked(type) }>
+                            <img className='filterImage' src={type.image} alt={type.title} />
+                            <div>
+                                {type.title}
+                            </div>
+                        </div>)
+
                     }
                 )
             }
