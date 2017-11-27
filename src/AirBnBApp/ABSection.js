@@ -16,7 +16,7 @@ export default class ABSection extends Component{
                 <div className="listing_container">
                 {
                     listings.map(
-                        (item) => <div><ListItem key={item.id} listItem={item} onFavClicked={this.onFavClicked}/></div>
+                        (item) => <ListItem key={item.id} listItem={item} onFavClicked={this.onFavClicked}/>
                     )
                 }
                 </div>
