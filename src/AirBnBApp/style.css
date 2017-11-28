@@ -33,7 +33,7 @@ i.icon {
     border: 1px solid #E5E5E5;
 }
 .filter_item_selected {
-    color: red;
+    /* color: red; */
     text-decoration: underline;
     cursor: pointer;
     display: flex;
@@ -60,7 +60,7 @@ button:active {
 .list_item {
     width: 200px;
     margin-top: 10px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     position: relative;
     opacity: 1;
 
@@ -72,7 +72,7 @@ button:active {
     max-height:200px;
     width: auto;
     height: auto;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     border-radius: 2px;
 }
 .list_item .like_button{
