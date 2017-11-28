@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import ABFilters from './ABFilters'
-import './style.css'
-import { seedSections, filterTypes } from './seedData'
-import ABSection from './ABSection'
+import React, { Component } from 'react';
+import ABFilters from './ABFilters';
+import './style.css';
+import { seedSections, filterTypes } from './seedData';
+import ABSection from './ABSection';
 
 
 export default class AirBnBApp extends Component {
@@ -33,7 +33,7 @@ export default class AirBnBApp extends Component {
 
     filterOnSection = (sectionId) => {
         let allSection = this.state.allSections,
-        newSections = allSection.filter((section) =>section.id === sectionId)
+            newSections = allSection.filter((section) => section.id === sectionId)
         this.setState({
             sectionstoShow: newSections
         })
@@ -59,7 +59,6 @@ export default class AirBnBApp extends Component {
         })
     }
     onFavClicked = (section, item) => {
-        console.log("item:: " + item.title + " and section:: " + section.title)
         // let newItem = item.
         item.isFavorite = !item.isFavorite
         let newFav = this.state.favorites
@@ -72,7 +71,6 @@ export default class AirBnBApp extends Component {
         this.setState({
             favorites: newFav
         })
-        console.log(this.state.sections)
     }
 
     render() {
@@ -93,7 +91,7 @@ export default class AirBnBApp extends Component {
                         {
                             this.state.sectionstoShow.map
                                 (
-                                (section) => <ABSection key={section.id} section={section} onFavClicked={this.onFavClicked} filterOnSection={this.filterOnSection} />
+                                    (section) => <ABSection key={section.id} section={section} onFavClicked={this.onFavClicked} filterOnSection={this.filterOnSection} />
                                 )
                         }
                     </div>

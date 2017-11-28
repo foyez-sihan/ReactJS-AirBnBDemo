@@ -1,9 +1,8 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
 
 export default class ABFilters extends Component{
     buttonClicked = (type) => (event) => {
-        console.log("Clicked: " + type.id)
         this.props.onFilterClicked(type)
     }
     render() {
