@@ -22,11 +22,9 @@ export default class AirBnBApp extends Component {
         })
     }
     checkFilter = (sectionTypeId) => {
-        for (let i = 0; i < this.state.filterTypes.length; i++) {
-            let filter = this.state.filterTypes[i];
-            if (filter.isSelected && filter.id === sectionTypeId) {
-                return true
-            }
+        let filterObject = this.state.filterTypes.find((filterType) => filterType.id == sectionTypeId && filterType.isSelected);
+        if (filterObject) {
+            return true
         }
         return false
     }
@@ -91,7 +89,7 @@ export default class AirBnBApp extends Component {
                         {
                             this.state.sectionstoShow.map
                                 (
-                                    (section) => <ABSection key={section.id} section={section} onFavClicked={this.onFavClicked} filterOnSection={this.filterOnSection} />
+                                (section) => <ABSection key={section.id} section={section} onFavClicked={this.onFavClicked} filterOnSection={this.filterOnSection} />
                                 )
                         }
                     </div>
