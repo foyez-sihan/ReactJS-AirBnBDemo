@@ -7,7 +7,6 @@ export default class ABFilters extends Component{
         this.props.onFilterClicked(type)
     }
     render() {
-        console.log(this.props)
         return (
             <div className='filter_container'>
                 {

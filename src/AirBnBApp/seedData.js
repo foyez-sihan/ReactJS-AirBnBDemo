@@ -1,6 +1,12 @@
 const generatePrice = () => Math.floor((Math.random() * 50) + 15)
 let filterTypes = [
     {
+        id: 0,
+        title: "All",
+        image: "http://cdn.wonderfulengineering.com/wp-content/uploads/2017/04/Natural-Wallpaper-9-768x480.jpg",
+        isSelected: false
+    },
+    {
         id: 1,
         title: "Home",
         image: "https://a0.muscache.com/ac/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?interpolation=lanczos-none&size=large&output-format=jpg&output-quality=70",

@@ -4,8 +4,10 @@ import ListItem from './ListItem'
 
 export default class ABSection extends Component{
     onFavClicked = (item) => {
-        console.log("item:: " + item.title + " and section:: " + this.props.section.title)
         this.props.onFavClicked(this.props.section, item)
+    }
+    filterOnSection = () => {
+        this.props.filterOnSection(this.props.section.id);
     }
     render(){
         const {title, listings} = this.props.section
@@ -16,7 +18,7 @@ export default class ABSection extends Component{
                 <div className="listing_container">
                 {
                     listings.map(
-                        (item) => <ListItem key={item.id} listItem={item} onFavClicked={this.onFavClicked}/>
+                        (item) => <ListItem key={item.id} listItem={item} onFavClicked={this.onFavClicked} filterOnSection={this.filterOnSection}/>
                     )
                 }
                 </div>
