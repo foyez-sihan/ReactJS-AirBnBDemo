@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
-import ABFilters from './ABFilters'
-import './style.css'
-import {seedSections, filterTypes} from './seedData'
-import ABSection from './ABSection'
+import React, { Component } from 'react';
+import ABFilters from './ABFilters';
+import './style.css';
+import { seedSections, filterTypes } from './seedData';
+import ABSection from './ABSection';
 
 
 export default class AirBnBApp extends Component {
@@ -30,9 +30,17 @@ export default class AirBnBApp extends Component {
         }
         return false
     }
+
+    filterOnSection = (sectionId) => {
+        let allSection = this.state.allSections,
+            newSections = allSection.filter((section) => section.id === sectionId)
+        this.setState({
+            sectionstoShow: newSections
+        })
+    }
     onFilterClicked = (filterType) => {
         let oldFilters = this.state.filterTypes
-        oldFilters.map((filter)=>{
+        oldFilters.map((filter) => {
             if (filter === filterType) {
                 filter.isSelected = true
             } else {
@@ -43,13 +51,14 @@ export default class AirBnBApp extends Component {
             filterTypes: oldFilters
         })
         let newSections = this.state.allSections
-        newSections = newSections.filter((section)=>this.checkFilter(section.typeId))
+        if (filterType.id != 0) {
+            newSections = newSections.filter((section) => this.checkFilter(section.typeId))
+        }
         this.setState({
             sectionstoShow: newSections
         })
     }
     onFavClicked = (section, item) => {
-        console.log("item:: " + item.title + " and section:: " + section.title)
         // let newItem = item.
         item.isFavorite = !item.isFavorite
         let newFav = this.state.favorites
@@ -62,14 +71,13 @@ export default class AirBnBApp extends Component {
         this.setState({
             favorites: newFav
         })
-        console.log(this.state.sections)
     }
 
-    render(){
-        const favoriteSection = {id: -999, title: "Your favorites", listings:this.state.favorites}
+    render() {
+        const favoriteSection = { id: -999, title: "Your favorites", listings: this.state.favorites }
         let favoriteComp = ''
         if (this.state.favorites.length > 0) {
-            favoriteComp = <ABSection key={favoriteSection.id} section = {favoriteSection} onFavClicked={this.onFavClicked}/>
+            favoriteComp = <ABSection key={favoriteSection.id} section={favoriteSection} onFavClicked={this.onFavClicked} />
         }
         return (
             <div className="main ui text container">
@@ -80,18 +88,18 @@ export default class AirBnBApp extends Component {
                         <ABFilters filterTypes={this.state.filterTypes} onFilterClicked={this.onFilterClicked} />
                     </div>
                     <div>
-                    {
-                        this.state.sectionstoShow.map
-                        (
-                            (section) => <ABSection key={section.id} section={section} onFavClicked={this.onFavClicked}/>
-                        )
-                    }
+                        {
+                            this.state.sectionstoShow.map
+                                (
+                                    (section) => <ABSection key={section.id} section={section} onFavClicked={this.onFavClicked} filterOnSection={this.filterOnSection} />
+                                )
+                        }
                     </div>
                     <div>
-                    {favoriteComp}
+                        {favoriteComp}
                     </div>
                 </div>
-                </div>
+            </div>
         )
     }
 }
